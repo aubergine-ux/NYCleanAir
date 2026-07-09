@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>NYCleanAir | Dashboard </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>New York City Air Quality Status by NYCleanAir</h1>
+    <p class="sub" id="updated">Loading current conditions…</p>
+  </header>
+
+  <div id="content">
+    <div class="loading">Fetching Air Quality data…</div>
+  </div>
+
+  <footer>
+    Data from the <a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">Open-Meteo Air Quality API</a>,
+    <br />
+    AQI uses the US EPA scale.
+  </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
